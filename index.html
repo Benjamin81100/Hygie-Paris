@@ -5,15 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Réservation des salles</title>
   <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(135deg, #6b73ff, #000dff);
+      color: white;
+    }
+    h1 {
+      margin: 20px 0;
+      font-size: 2.5em;
+      text-align: center;
+    }
     .salles-container {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       padding: 20px;
       justify-content: center;
+      width: 100%;
+      max-width: 1200px;
     }
     .salle-button {
-      background-color: #2b579a;
+      background-color: rgba(43, 87, 154, 0.8);
       color: white;
       padding: 20px 40px;
       border-radius: 12px;
@@ -21,15 +38,18 @@
       font-size: 18px;
       font-weight: bold;
       text-align: center;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.3s ease;
       width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     .salle-button:hover {
-      background-color: #1e3f6e;
+      background-color: rgba(30, 63, 110, 0.9);
+      transform: translateY(-5px);
     }
   </style>
 </head>
 <body>
+  <h1>Réservation des Salles</h1>
   <div class="salles-container">
     <a href="https://outlook.office365.com/book/Olympie@lafsante.com/" class="salle-button" target="_blank">
       🏟️ Olympie (14 places)
