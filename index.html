@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Réservation des salles</title>
+  <title>Réservation des Salles</title>
   <style>
+    /* Style général */
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
@@ -12,60 +13,108 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: linear-gradient(135deg, #6b73ff, #000dff);
-      color: white;
+      background: linear-gradient(135deg, #f7f7f7, #e8e8e8);
+      color: #333;
+      min-height: 100vh;
     }
-    h1 {
-      margin: 20px 0;
-      font-size: 2.5em;
+    
+    /* Conteneur principal */
+    .container {
       text-align: center;
+      padding: 40px 20px;
+      max-width: 1200px;
+      width: 100%;
     }
+    
+    /* Titre */
+    h1 {
+      margin: 0 0 20px;
+      font-size: 3em;
+      font-weight: bold;
+      color: #2a2a2a;
+    }
+    
+    /* Description */
+    .description {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      color: #555;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Conteneur des boutons */
     .salles-container {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
-      padding: 20px;
       justify-content: center;
-      width: 100%;
-      max-width: 1200px;
+      padding: 20px;
     }
+    
+    /* Boutons des salles */
     .salle-button {
-      background-color: rgba(43, 87, 154, 0.8);
-      color: white;
+      background: white;
+      color: #2a2a2a;
       padding: 20px 40px;
       border-radius: 12px;
       text-decoration: none;
       font-size: 18px;
       font-weight: bold;
       text-align: center;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
       width: 200px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+    
+    /* Effet au survol */
     .salle-button:hover {
-      background-color: rgba(30, 63, 110, 0.9);
+      background: #f0f0f0;
       transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Icônes */
+    .salle-button i {
+      font-size: 24px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>Réservation des Salles</h1>
-  <div class="salles-container">
-    <a href="https://outlook.office365.com/book/Olympie@lafsante.com/" class="salle-button" target="_blank">
-      🏟️ Olympie (14 places)
-    </a>
-    <a href="https://outlook.office365.com/book/Sprint@lafsante.com/" class="salle-button" target="_blank">
-      🚀 Sprint (5 places)
-    </a>
-    <a href="https://outlook.office365.com/book/Brennus1@lafsante.com/" class="salle-button" target="_blank">
-      🛋️ Brennus1 (5 places)
-    </a>
-    <a href="https://outlook.office365.com/book/Auriane1@lafsante.com/" class="salle-button" target="_blank">
-      🪑 Auriane1 (2 places)
-    </a>
-    <a href="https://outlook.office365.com/book/Podium@lafsante.com/" class="salle-button" target="_blank">
-      🏆 Podium (1 place)
-    </a>
+  <div class="container">
+    <!-- Titre -->
+    <h1>Réservez Votre Salle</h1>
+    
+    <!-- Description -->
+    <p class="description">
+      Choisissez parmi nos 5 salles modulables pour vos réunions. Cliquez sur une salle pour vérifier les disponibilités et réserver.
+    </p>
+    
+    <!-- Boutons des salles -->
+    <div class="salles-container">
+      <a href="https://outlook.office365.com/book/Olympie@lafsante.com/" class="salle-button" target="_blank" rel="noopener noreferrer">
+        🏟️ Olympie (14 places)
+      </a>
+      <a href="https://outlook.office365.com/book/Sprint@lafsante.com/" class="salle-button" target="_blank" rel="noopener noreferrer">
+        🚀 Sprint (5 places)
+      </a>
+      <a href="https://outlook.office365.com/book/Brennus1@lafsante.com/" class="salle-button" target="_blank" rel="noopener noreferrer">
+        🛋️ Brennus1 (5 places)
+      </a>
+      <a href="https://outlook.office365.com/book/Auriane1@lafsante.com/" class="salle-button" target="_blank" rel="noopener noreferrer">
+        🪑 Auriane1 (2 places)
+      </a>
+      <a href="https://outlook.office365.com/book/Podium@lafsante.com/" class="salle-button" target="_blank" rel="noopener noreferrer">
+        🏆 Podium (1 place)
+      </a>
+    </div>
   </div>
 </body>
 </html>
