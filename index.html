@@ -11,13 +11,14 @@
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      flex-direction: column;
       background: linear-gradient(135deg, #f7f7f7, #e8e8e8);
       color: #333;
       min-height: 100vh;
     }
-    
+
     /* Conteneur principal */
     .container {
       text-align: center;
@@ -25,7 +26,7 @@
       max-width: 1200px;
       width: 100%;
     }
-    
+
     /* Titre */
     h1 {
       margin: 0 0 20px;
@@ -33,38 +34,36 @@
       font-weight: bold;
       color: #2a2a2a;
     }
-    
+
     /* Description */
     .description {
       font-size: 1.2em;
-      margin-bottom: 40px;
+      margin-bottom: 60px; /* Espace augmenté ici */
       color: #555;
       max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto 60px;
     }
-    
+
     /* Conteneur des boutons */
     .salles-container {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-      padding: 20px;
     }
-    
+
     /* Boutons des salles */
     .salle-button {
       background: white;
       color: #2a2a2a;
-      padding: 20px 40px;
+      padding: 25px 50px;
       border-radius: 12px;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: bold;
       text-align: center;
       transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-      width: 200px;
+      width: 280px;
       border: 1px solid #ddd;
       display: flex;
       flex-direction: column;
@@ -72,17 +71,17 @@
       justify-content: center;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-    
+
     /* Effet au survol */
     .salle-button:hover {
       background: #f0f0f0;
       transform: translateY(-5px);
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     }
-    
+
     /* Icônes */
     .salle-button i {
-      font-size: 24px;
+      font-size: 28px;
       margin-bottom: 10px;
     }
   </style>
@@ -94,7 +93,7 @@
     
     <!-- Description -->
     <p class="description">
-      Choisissez parmi nos 5 salles modulables pour vos réunions. Cliquez sur une salle pour vérifier les disponibilités et réserver.
+      Choisissez parmi nos 5 salles modulables pour vos réunions, formations ou événements. Cliquez sur une salle pour vérifier les disponibilités et réserver.
     </p>
     
     <!-- Boutons des salles -->
