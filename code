@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation des salles</title>
+  <style>
+    .salles-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+    .salle-button {
+      background-color: #2b579a;
+      color: white;
+      padding: 20px 40px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      width: 200px;
+    }
+    .salle-button:hover {
+      background-color: #1e3f6e;
+    }
+  </style>
+</head>
+<body>
+  <div class="salles-container">
+    <a href="https://outlook.office365.com/book/Olympie@lafsante.com/" class="salle-button" target="_blank">
+      🏟️ Olympie (14 places)
+    </a>
+    <a href="https://outlook.office365.com/book/Sprint@lafsante.com/" class="salle-button" target="_blank">
+      🚀 Sprint (5 places)
+    </a>
+    <a href="https://outlook.office365.com/book/Brennus1@lafsante.com/" class="salle-button" target="_blank">
+      🛋️ Brennus1 (5 places)
+    </a>
+    <a href="https://outlook.office365.com/book/Auriane1@lafsante.com/" class="salle-button" target="_blank">
+      🪑 Auriane1 (2 places)
+    </a>
+    <a href="https://outlook.office365.com/book/Podium@lafsante.com/" class="salle-button" target="_blank">
+      🏆 Podium (1 place)
+    </a>
+  </div>
+</body>
+</html>
